@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+@media (min-width: 640px) and (max-width: 979px) {
+    .box{
+        background-color: blue;
+    }
+    .container{
+        background-color: green;
+    }
+   
+    }
+
+@media (min-width: 980px) and (max-width: 1320px) {
+    .box{
+        background-color: red;
+    }
+    .container{
+        background-color: yellow;
+    }
+}
+@media (min-width: 1321px) and (max-width: 1496px) {
+    .box{
+        background-color: red;
+    }
+    .container{
+        background-color: blue;
+    }
+}
+@media (max-width: 639px) {
+    .box{
+        background-color: red;
+    }
+    .container{
+        background-color: orange;
+    }
+}
